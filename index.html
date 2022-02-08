@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Temple of Hephaistos</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+    <!-- Link for scripts to make menus work -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Embedded CSS -->
+<!--    Changes made below-->
+    <style>
+    .border {
+    border: 0px #dee2e6!important;
+    }
+
+    .top-search{
+    background-color: gray;
+    border-radius: 3%;
+    }
+
+    .card{
+      margin-top: 25px;
+    }
+
+    .card-body{
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .navbar-brand{
+      padding-left: 25px;
+    }
+
+    #temple_header, #pic_column {
+      padding-right: 40px;
+      padding-left: 40px;
+      padding-top: 5px;
+      padding-bottom: 15px;
+    }
+
+    #breadcr{
+      padding-left:20px;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    #search_bar{
+      margin-top: 20px;
+      margin-left: 25px;
+    }
+    #list_group_1, #list_group_2{
+      margin-top: 50px;
+      margin-left: -20px;
+      width: 13.7vw;
+    }
+
+    #search_card{
+      margin-left: 25px;
+      margin-top: 10px;
+    }
+
+    #icon_bar{
+      color:white;
+    }
+
+    #UK{
+      text-decoration: underline;
+      color: midnightblue;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    .breadcrumb {
+      box-shadow: 1px 1px #d5d4d4;
+      background: #eeeded;
+      border: 1px solid #efeef5;
+      border-radius: 5px;
+      padding: 0 5px 0 10px !important;
+      font-size: 16px;
+      line-height:2em;
+    }
+    </style>
+
+    </head>
+
+<body class="bg-light">
+
+    <!-- Navbar 1 with icons -->
+    <nav class="navbar navbar-expand-sm py-0 navbar-dark bg-primary" id="icon_bar">
+        <div class="container">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="bi bi-box-arrow-right"></i>Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="bi bi-person-fill"></i>Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="bi bi-star-fill"></i>Favorites</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Navbar 2 with dropdown -->
+    <nav class="navbar navbar-expand-lg py-4 navbar-dark bg-secondary">
+        <div class="container border">
+            <a class="navbar-brand" href="#">Share your travels</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Contact</a>
+                        </li>
+                         <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Browse
+                            </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Continents</a></li>
+                        <li><a class="dropdown-item" href="#">Countries</a></li>
+                    </ul>
+                         </li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+    <!-- Body of the page -->
+    <div class="container border">
+    <div class = "row">
+
+    <!-- Smaller left column -->
+    <div class="col-md-3 bg-light">
+
+    <!-- Search bar -->
+    <div class="card w-80 h-20" id="#search_card">
+        <div class="card-header">
+            Search
+        </div>
+        <div class="card-body">
+            <div class="input-group ">
+                <input type="text" class="form-control form-control-sm" placeholder="search...">
+                <button type="submit" class="input-group-text btn-warning btn-sm"><i class="bi bi-search me-2"></i></button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- List group 1 -->
+    <div class = "container" id="list_group_1">
+        <div class="card border-primary">
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">Continents</li>
+                <li class="list-group-item"><a href="#">Africa</a></li>
+                <li class="list-group-item"><a href="#">Asia</a></li>
+                <li class="list-group-item"><a href="#">Europe</a></li>
+                <li class="list-group-item"><a href="#">North America</a></li>
+                <li class="list-group-item"><a href="#">Oceania</a></li>
+                <li class="list-group-item"><a href="#">South America</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- List group 2 -->
+    <div class = "container" id="list_group_2">
+        <div class="card border-primary">
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">Popular countries</li>
+                <li class="list-group-item"><a href="#">Canada</a></li>
+                <li class="list-group-item"><a href="#">Germany</a></li>
+                <li class="list-group-item"><a href="#">Ghana</a></li>
+                <li class="list-group-item"><a href="#" id="UK">United Kingdom</a></li>
+                <li class="list-group-item"><a href="#">United States</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- Bigger right column -->
+    <div class="col-md-9 bg-light">
+
+    <div class ="row">
+    <!-- Row for breadcrumbs element -->
+    <div>
+
+        <!-- Breadcrumb -->
+        <header id="breadcr">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Favorites</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Temple of Hephaistos</li>
+                </ol>
+            </nav>
+        </header>
+
+
+    </div>
+    <!-- Row for Temple of Hephastosis header -->
+    <div class ="row" id="temple_header">
+        <h1>Temple of Hephaistos</h1>
+    </div>
+
+        <!-- Bigger left column with the picture -->
+        <div class="col-md-8 bg-light" id="pic_column">
+
+            <div>
+                <img src= "images/temple.jpg" class="img-fluid" title="Temple of Hephaistos"/>
+            </div>
+
+        </div>
+            <!-- Smaller right column with the card -->
+
+                    <div class="col-md-4 bg-light">
+
+                        <div class="card border-primary">
+                            <div class="card-body">
+                                <p>By <a href="#">Ellie Sullivan</a></p>
+                                <p>Taken in<a href="#"> Greece</a></p>
+                                <p>Located on western perimeter of Agora in Athens.
+                                    Built in 460-415 BCE, itr is the best preserved temple of antiquity
+                                </p>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </div>
+</body>
+
+
+
+
+
+
